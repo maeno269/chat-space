@@ -13,8 +13,7 @@
 
 |Column|Type|Option|
 |------|----|------|
-|name|text|null: false, |
-|group_id|integer|null: false, foreign_key: true|
+|name|text|null: false|
 |email|text|null: false|
 
 ### Association
