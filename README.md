@@ -31,7 +31,7 @@
 - has_many :users
 - has_many :messages
 
-##messagesテーブル
+## messagesテーブル
 |Column|Type|Option|
 |------|----|------|
 |user_id|integer|null: false, foreign_key: true|
