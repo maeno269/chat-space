@@ -1,0 +1,30 @@
+.area
+
+  =render partial: "sidebar"
+
+  .area__right
+    .header
+      .header__left
+        .sample sampleグループ
+        .member member aaaaaa
+      .header__right
+        = link_to "Edit","#",class: "button"
+    .rightcontents
+      .date
+        .name maeno
+        .day 2018/01/01
+      .messages
+        .coments なるほど
+      .date
+        .name maeno
+        .day 2018/01/01
+      .messages
+        .coments good
+    .form
+      %form
+        %input.form__coments
+        %label.form__image
+          %i.far.fa-image.form__icon.fa-lgx
+            %span.fileabel
+              %input.hidden{type: "file"}
+        %input.form__submit{type: 'submit', value: 'Send'}
