@@ -1,8 +1,8 @@
-.area
+.wrapper
 
   =render partial: "sidebar"
 
-  .area__right
+  .chat
     .header
       .header__left
         .sample sampleグループ
@@ -11,20 +11,20 @@
         = link_to "Edit","#",class: "button"
     .rightcontents
       .date
-        .name maeno
-        .day 2018/01/01
+        .date__name maeno
+        .date__day 2018/01/01
       .messages
-        .coments なるほど
+        .messages__coments なるほど
       .date
-        .name maeno
-        .day 2018/01/01
+        .date__name maeno
+        .date__day 2018/01/01
       .messages
-        .coments good
+        .messages__coments good
     .form
       %form
         %input.form__coments
         %label.form__image
-          %i.far.fa-image.form__icon.fa-lgx
+          = fa_icon 'picture-o', class: 'icon' do
             %span.fileabel
               %input.hidden{type: "file"}
         %input.form__submit{type: 'submit', value: 'Send'}

@@ -1,4 +1,4 @@
-.area__right{
+.chat{
   height: 100vh;
   width: calc(100vw - 300px);
   float: left;
@@ -15,7 +15,6 @@
           	  font-size: 20px;
           	  color: #333333;
               margin-left:40px;
-              // float: left;
             }
         .member{
           	  font-size: 12px;
@@ -45,22 +44,25 @@
       margin-left: 40px;
       .date{
         display: flex;
-        .name{
+        &__name{
           margin-right: 10px;
           font-size: 16px;
           font-weight: bold;
           font-color: #434A54;
         }
-        .day{
+        &__day{
           font-size: 12px;
           font-color: $gray;
         }
       }
-        .coments{
+      .messages{
+        &__coments{
           font-size: 14px;
           font-color: #434A54;
           margin-top: 10px;
           margin-bottom: 40px;
+        }
+      }
       }
     }
     .form{
@@ -98,5 +100,5 @@
         margin-left: 15px;
         padding: 0 30px;
           }
-    }
 }
+
