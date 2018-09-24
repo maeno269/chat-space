@@ -14,17 +14,16 @@
         .date__name maeno
         .date__day 2018/01/01
       .messages
-        .messages__coments なるほど
+        .messages__comments なるほど
       .date
         .date__name maeno
         .date__day 2018/01/01
       .messages
-        .messages__coments good
+        .messages__comments good
     .form
       %form
-        %input.form__coments
+        %input.form__comments
         %label.form__image
-          = fa_icon 'picture-o', class: 'icon' do
-            %span.fileabel
-              %input.hidden{type: "file"}
+          = fa_icon 'image', class: 'form__image__icon'
+          %input.hidden{type: "file"}
         %input.form__submit{type: 'submit', value: 'Send'}
