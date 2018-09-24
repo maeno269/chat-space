@@ -11,18 +11,18 @@
       &__left{
         float: left;
         .sample{
-          	  padding: 35px 0 15px 0;
-          	  font-size: 20px;
-          	  color: #333333;
-              margin-left:40px;
-            }
-        .member{
-          	  font-size: 12px;
-          	  color: $gray;
-              margin-left:40px;
-              float: left;
-            }
+      	  padding: 35px 0 15px 0;
+      	  font-size: 20px;
+      	  color: #333333;
+          margin-left:40px;
         }
+        .member{
+      	  font-size: 12px;
+      	  color: $gray;
+          margin-left:40px;
+          float: left;
+        }
+      }
       &__right{
         float: right;
         line-height: 100px;
@@ -37,7 +37,7 @@
           margin-right: 40px;
           text-decoration: none;
         }
-     }
+      }
     }
     .rightcontents{
       margin-top: 46px;
@@ -62,7 +62,6 @@
           margin-top: 10px;
           margin-bottom: 40px;
         }
-      }
       }
     }
     .form{
@@ -105,6 +104,7 @@
         font-size: 16px;
         margin-left: 15px;
         padding: 0 30px;
-          }
+      }
+    }
 }
 
