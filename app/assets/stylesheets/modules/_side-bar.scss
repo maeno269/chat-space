@@ -1,0 +1,42 @@
+.leftcontainer{
+  background-color: #2f3e51;
+  width: 300px;
+  height: 100vh;
+  float: left;
+
+  .header{
+  	background-color: #253141;
+  	width: 300px;
+  	height: 100px;
+      .sample{
+        color: $white;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 100px;
+        margin-left: 20px;
+        float: left;
+      }
+      .icon{
+        float: right;
+        color: $white;
+        line-height: 100px;
+        margin-right: 20px;
+      }
+  }
+  .leftcontents{
+   width: 300px;
+   height: calc(100vh-150px);
+   padding: 0 20px;
+   .groups{
+   	font-size: 15px;
+   	color: $white;
+    margin-top: 20px;
+   }
+   .coment{
+   	font-size: 11px;
+   	color: $white;
+   	margin: 5px 0 40px 0;
+   }
+  }
+}
+

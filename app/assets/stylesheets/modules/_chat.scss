@@ -1,0 +1,110 @@
+.chat{
+  height: 100vh;
+  width: calc(100vw - 300px);
+  float: left;
+  background-color: #eeeeee;
+  position: relative;
+    .header{
+      background-color: white;
+      height: 100px;
+      width: calc(100vw - 300px);
+      &__left{
+        float: left;
+        .sample{
+      	  padding: 35px 0 15px 0;
+      	  font-size: 20px;
+      	  color: #333333;
+          margin-left:40px;
+        }
+        .member{
+      	  font-size: 12px;
+      	  color: $gray;
+          margin-left:40px;
+          float: left;
+        }
+      }
+      &__right{
+        float: right;
+        line-height: 100px;
+        .button{
+          border: 1px solid $skyblue;
+          color: $skyblue;
+          height: 40px;
+          line-height: 40px;
+          margin-top: 28px;
+          padding: 0 20px;
+          float: right;
+          margin-right: 40px;
+          text-decoration: none;
+        }
+      }
+    }
+    .rightcontents{
+      margin-top: 46px;
+      margin-left: 40px;
+      .user{
+        display: flex;
+        &__name{
+          margin-right: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          font-color: #434A54;
+        }
+        &__day{
+          font-size: 12px;
+          font-color: $gray;
+        }
+      }
+      .messages{
+        &__comments{
+          font-size: 14px;
+          font-color: #434A54;
+          margin-top: 10px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .form{
+      width: calc(100vw - 300px);
+      box-sizing: border-box;
+      height: 90px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 20px 50px 20px 40px;
+      background-color: #DDDDDD;
+      &__comments{
+        border: none;
+        box-sizing: border-box;
+        float: left;
+        height: 50px;
+        padding: 0 10px;
+        width: calc(100% - 150px);
+      }
+      &__image{
+        box-sizing: border-box;
+        background-color: $white;
+        padding-right: 10px;
+        height: 50px;
+        float: left;
+        &__icon{
+          box-sizing: border-box;
+          padding-top: 20px;
+        }
+        .hidden{
+        display: none;
+        }
+      }
+      &__submit{
+        display: block;
+        float: right;
+        background-color: $skyblue;
+        height: 50px;
+        color: $white;
+        font-size: 16px;
+        margin-left: 15px;
+        padding: 0 30px;
+      }
+    }
+}
+
