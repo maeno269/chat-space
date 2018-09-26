@@ -8,7 +8,7 @@
   	background-color: #253141;
   	width: 300px;
   	height: 100px;
-      .sample{
+      &__name{
         color: $white;
         font-size: 16px;
         font-weight: bold;
@@ -16,11 +16,17 @@
         margin-left: 20px;
         float: left;
       }
-      .icon{
+      &__lists{
+        display: inline-block;
         float: right;
-        color: $white;
-        line-height: 100px;
-        margin-right: 20px;
+        .list{
+          display: inline-block;
+        }
+        .icon{
+          color: $white;
+          line-height: 100px;
+          margin-right: 20px;
+        }
       }
   }
   .leftcontents{
