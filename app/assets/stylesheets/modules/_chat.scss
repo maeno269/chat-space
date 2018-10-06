@@ -1,7 +1,6 @@
 .chat{
   height: 100vh;
   width: calc(100vw - 300px);
-  float: left;
   background-color: #eeeeee;
   position: relative;
     .header{
@@ -40,71 +39,77 @@
       }
     }
     .rightcontents{
+      height: calc(100vh - 100px - 90px);
       margin-top: 46px;
       margin-left: 40px;
-      .user{
-        display: flex;
-        &__name{
-          margin-right: 10px;
-          font-size: 16px;
-          font-weight: bold;
-          font-color: #434A54;
+      overflow: scroll;
+      .message{
+        .upper-message{
+          display: flex;
+          &__user-name{
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #434A54;
+          }
+          &__date{
+            font-size: 12px;
+            color: $gray;
+          }
         }
-        &__day{
-          font-size: 12px;
-          font-color: $gray;
-        }
-      }
-      .messages{
-        &__comments{
-          font-size: 14px;
-          font-color: #434A54;
-          margin-top: 10px;
-          margin-bottom: 40px;
+
+        .lower-meesage{
+          p{
+            font-size: 14px;
+            color: #434A54;
+            margin-top: 10px;
+            margin-bottom: 40px;
+          }
+          img{
+            object-fit: contain;
+            width: 200px;
+          }
         }
       }
     }
-    .form{
-      width: calc(100vw - 300px);
-      box-sizing: border-box;
-      height: 90px;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      padding: 20px 50px 20px 40px;
-      background-color: #DDDDDD;
-      &__comments{
-        border: none;
-        box-sizing: border-box;
-        float: left;
-        height: 50px;
-        padding: 0 10px;
-        width: calc(100% - 150px);
+    .form {
+    background-color: #DDDDDD;
+    box-sizing: border-box;
+    height: 90px;
+    width: calc(100vw - 300px);
+    padding: 20px 50px 20px 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    &__message {
+      border: none;
+      float: left;
+      height: 50px;
+      width: calc(100% - 150px);
+    }
+    &__mask {
+      background-color: $white;
+      float: left;
+      height: 50px;
+      padding-right: 10px;
+      &__image {
+        font-size: 20px;
+        line-height: 50px;
       }
-      &__image{
-        box-sizing: border-box;
-        background-color: $white;
-        padding-right: 10px;
-        height: 50px;
-        float: left;
-        &__icon{
-          box-sizing: border-box;
-          padding-top: 20px;
-        }
-        .hidden{
+      .hidden {
         display: none;
-        }
       }
-      &__submit{
-        display: block;
-        float: right;
+    }
+      &__submit {
         background-color: $skyblue;
-        height: 50px;
+        border: none;
         color: $white;
+        float: right;
         font-size: 16px;
+        height: 50px;
         margin-left: 15px;
         padding: 0 30px;
       }
-    }
+  }
 }
 
