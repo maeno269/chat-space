@@ -8,22 +8,15 @@
         .sample sampleグループ
         .member member aaaaaa
       .header__right
-        = link_to "Edit","#",class: "button"
+        = link_to "Edit", edit_group_path(params[:group_id]), class: "button"
     .rightcontents
-      .user
-        .user__name maeno
-        .user__day 2018/01/01
-      .messages
-        .messages__comments なるほど
-      .user
-        .user__name maeno
-        .user__day 2018/01/01
-      .messages
-        .messages__comments good
+      =render @messages
+
     .form
-      %form
-        %input.form__comments
-        %label.form__image
-          = fa_icon 'image', class: 'form__image__icon'
-          %input.hidden{type: "file"}
-        %input.form__submit{type: 'submit', value: 'Send'}
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: "form__message", placeholder: "type a message"
+        .form__mask
+          = f.label :image, class: "form__mask__image" do
+            = fa_icon "image", class: "icon"
+            = f.file_field :image, class: "hidden"
+        = f.submit "send", class: "form__submit"
