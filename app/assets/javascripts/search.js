@@ -3,7 +3,7 @@ $(function() {
     var html =   `<div class="chat-group-user clearfix">
                     <p class="chat-group-user__name">${user.name}</p>
                     <a class="user-search-add chat-group-user__btn chat-group-user__btn--add"
-                    data-user-id=${user.id} data-user-name=${user.name}>追加</a>
+                    dataUserId=${user.id} dataUserName=${user.name}>追加</a>
                   </div>`
     return html;
   }
@@ -25,8 +25,8 @@ $(function() {
 
   $("#user-search-result").on("click", ".chat-group-user__btn--add", function(){
     $(this).parent().remove();
-    var userId = $(this).attr("data-user-id");
-    var userName = $(this).attr("data-user-name");
+    var userId = $(this).attr("dataUserId");
+    var userName = $(this).attr("dataUserName");
     var group = buildGROUP(userId,userName);
     $("#chat-group-users").append(group);
   });
