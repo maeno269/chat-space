@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
-    @newMessages = @group.messages.where('id > ?', "#{params[:lastId]}")
+    @new_messages = @group.messages.where('id > ?', "#{params[:lastId]}")
     @messages = @group.messages.includes(:user)
     respond_to do |format|
       format.html
