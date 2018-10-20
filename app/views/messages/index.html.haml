@@ -10,6 +10,7 @@
       .header__right
         = link_to "Edit", edit_group_path(params[:group_id]), class: "button"
     .rightcontents
+      %input#lastId{type: "hidden", value: "#{@lastId}"}
       =render @messages
 
     .form
